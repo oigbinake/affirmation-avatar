@@ -1,0 +1,94 @@
+/*PAGE STYLE*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f0ff, #e8f4ff);
+    font-family: 'Poppins', sans-serif;
+}
+
+/*CONTAINER BOX*/
+.container {
+    background-color: white;
+    border-radius: 24px;
+    padding: 40px;
+    max-width: 420px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); 
+}
+
+/*AVATAR IMAGE*/
+#avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #c9b0ff;
+    transition: transform 0.3s ease;
+}
+
+#avatar:hover {
+    transform: scale(1.05);
+}
+
+/*GREETING TEST*/
+#greeting {
+    font-size: 26px;
+    color: #5a3d8a;
+    margin-bottom: 12px;
+}
+
+/*AFFIRMATION TEXT*/
+#affirmation-text {
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.6;
+    min-height: 60px;
+    margin-bottom: 28px;
+    transition: opacity 0.4s ease;
+}
+
+/*BUTTON*/
+#affirmation-btn {
+    background-color: #7c4dff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 14px 32px;
+    font-size:16px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#affirmation-btn:hover {
+    background-color:#5e35b1;
+    transform: translateY(-2px);
+}
+
+#affirmation-btn:active {
+    transform: translateY(0px);
+}
+
+/*BOUNCE ANIMATION (triggered by JS)*/
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    40% { transform: translateY(-12px); }
+    70% { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+    
+}
+
+.bouncing {
+    animation: bounce 0.5s ease;
+}
